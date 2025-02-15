@@ -1,10 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статьи</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-$END$
+<header class="top-header">
+    <h1>Новости и статьи</h1>
+    <p>Актуальные статьи, обзоры и аналитика по разным темам</p>
+</header>
+<nav>
+    <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="category.html?category=Машины">Машины</a></li>
+        <li><a href="category.html?category=Самолеты">Самолеты</a></li>
+        <li><a href="category.html?category=Техника">Техника</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <h1 id="category-title">Статьи</h1>
+    <div id="articles-list" class="articles"></div>
+</div>
+
+<script src="index.js"></script>
 </body>
 </html>

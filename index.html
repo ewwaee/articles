@@ -3,34 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Пример сайта с рекламой</title>
+    <title>Новости и статьи</title>
     <link rel="stylesheet" href="style.css">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8264649076527176"
-            crossorigin="anonymous"></script>
+    <script defer src="index.js"></script>
 </head>
 <body>
-<header>
-    <h1>Мой сайт с статьями</h1>
-    <p>Добро пожаловать! Читайте наши статьи и смотрите рекламу.</p>
-</header>
 
-<div class="content">
-    <h2>Статьи:</h2>
-    <ul>
-        <li><a href="#">Как улучшить здоровье</a></li>
-        <li><a href="#">Секреты эффективного сна</a></li>
-        <li><a href="#">Советы по путешествиям</a></li>
-    </ul>
-</div>
+    <header class="top-header">
+        <h1>Новости и статьи</h1>
+        <p>Актуальные статьи, обзоры и аналитика по разным темам</p>
+    </header>
 
-<aside class="sidebar">
-    <h3>Реклама</h3>
-    <p>Здесь будет ваша реклама.</p>
-</aside>
+    <nav>
+        <div class="container">
+
+        </div>
+    </nav>
+    <nav class="scroll-nav">
+        <button class="scroll-btn left">⮜</button>
+        <div class="scroll-container">
+            <ul class="scroll-list">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="category.html?category=Машины">Машины</a></li>
+                <li><a href="category.html?category=Самолеты">Самолеты</a></li>
+                <li><a href="category.html?category=Техника">Техника</a></li>
+            </ul>
+        </div>
+        <button class="scroll-btn right">⮞</button>
+    </nav>
+
+
+
+
+
+<main>
+    <section id="articles" class="articles container">
+        <h2>Последние статьи</h2>
+        <article>
+            <img src="pics/cars.jpg" alt="Автомобиль">
+            <h3>Электромобили 2025 года: будущее уже здесь</h3>
+            <p>Разбираем топ новинок электрокаров, которые выйдут в этом году.</p>
+            <a href="#">Читать далее</a>
+        </article>
+        <article>
+            <img src="pics/traktor.jpg" alt="Трактор">
+            <h3>Современные тракторы: какие технологии меняют сельское хозяйство?</h3>
+            <p>Рассматриваем новейшие разработки в аграрной технике.</p>
+            <a href="#">Читать далее</a>
+        </article>
+        <article>
+            <img src="pics/flies.jpg" alt="Котел">
+            <h3>Как выбрать надежный котел для отопления?</h3>
+            <p>Гид по выбору отопительных систем для дома и бизнеса.</p>
+            <a href="#">Читать далее</a>
+        </article>
+    </section>
+
+    <aside id="popular" class="popular container">
+        <h2>Популярные статьи</h2>
+        <ul>
+            <li><a href="#">Как экономить топливо на дизельных машинах?</a></li>
+            <li><a href="#">ТОП-5 технологий, изменивших автопром</a></li>
+            <li><a href="#">Как выбрать строительную технику для бизнеса?</a></li>
+        </ul>
+    </aside>
+</main>
+
+<section id="contact" class="contact container">
+    <h2>Контакты</h2>
+    <p>Свяжитесь с нами: <a href="mailto:info@techworld.com">info@techworld.com</a></p>
+</section>
 
 <footer>
-    <p>© 2025 Мой сайт с рекламой</p>
+    <div class="container">
+        <p>&copy; 2025 Технический Мир. Все права защищены.</p>
+    </div>
 </footer>
 </body>
 </html>
-
